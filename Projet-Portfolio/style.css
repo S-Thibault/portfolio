@@ -6,7 +6,6 @@ nav{
   background-image: url("img/block1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-
   padding: 250px 40px 250px 40px;
 
 }
@@ -30,6 +29,15 @@ p{
   color: #FFFFFF;
 }
 
+span{
+  margin-left: auto;
+  margin-right: auto;
+  width: 6em
+  text-align: center;
+  font-size: 35px;
+  font-family: 'Bree Serif', serif;
+  color: #FFFFFF;
+}
 
 .row {
   display: flex;
