@@ -44,11 +44,12 @@
 </article>
 
 <article id="block2">
-<nav class="navbar navbar-expand-sm navbar-dark">
-  <h1>
+<nav class="navbar navbar-expand-sm navbar-dark ">
+  <span>
     mes projets
   </h1>
-</nav>
+</span>
+</article>
 
 <div class="row">
   <div class="column">
@@ -62,7 +63,7 @@
   </div>
 </div>
 
-</article>
+
 
 
 </body>
