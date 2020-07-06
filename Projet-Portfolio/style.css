@@ -1,0 +1,46 @@
+nav{
+  background-color: black;
+}
+
+#block1{
+  background-image: url("img/block1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  padding: 250px 40px 250px 40px;
+
+}
+
+h1{
+  position: center;
+  text-align: center;
+  font-family: 'Bree Serif', serif;
+  color: #FFFFFF;
+}
+
+h2{
+  font-family: 'Bree Serif', serif;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+p{
+  font-family: 'Bree Serif', serif;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+
+.row {
+  display: flex;
+}
+
+.column {
+
+}
+
+img {
+	width: 532px;
+	height: 532px;
+  object-fit: cover;
+}
