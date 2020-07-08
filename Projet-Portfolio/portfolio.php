@@ -28,7 +28,7 @@
        <a class="nav-link" href="#block2">projets</a>
      </li>
      <li class="nav-item">
-       <a class="nav-link" href="#">articles</a>
+       <a class="nav-link" href="#block4">articles</a>
      </li>
      <li class="nav-item">
        <a class="nav-link" href="#">contact</a>
@@ -46,25 +46,55 @@
 <article id="block2">
 <nav class="navbar navbar-expand-sm navbar-dark ">
   <span>
-    mes projets
+    Mes projets
   </h1>
 </span>
 </article>
 
-<div class="row">
-  <div class="column">
-    <img src="img/maquette.png" alt="Snow" style="">
+<article id="block3">
+<div class="wrapper">
+<div class="media">
+<div class="layer">
+    <p>Projet : integration de maquette </p>
   </div>
-  <div class="column">
-    <img src="img/filesexplorer.png" alt="Forest" style="">
-  </div>
-  <div class="column">
-    <img src="img/bomberman.png" alt="Mountains" style="">
-  </div>
+<img src="img/maquette.gif" alt="" />
 </div>
+ <div class="media">
+<div class="layer">
+    <p>Projet : files explorer</p>
+  </div>
+<img src="img/filesexplorer.png" alt="" />
+</div>
+   <div class="media">
+<div class="layer">
+    <p>Projet : bomberman</p>
+  </div>
+<img src="img/bomberman.gif" alt="" />
+</div>
+</div>
+</article>
 
+<article id="block4">
+<nav class="navbar navbar-expand-sm navbar-dark ">
+  <span>
+    Mes articles
+  </h1>
+</span>
+</article>
 
+<article id="block5">
+<h1> </h1>
+<p> </p>
+</article>
 
+<article id="block6">
+<nav class="navbar navbar-expand-sm navbar-dark ">
+  <span>
+    contact
+  </h1>
+</span>
+</article>
 
 </body>
 </html>
+
