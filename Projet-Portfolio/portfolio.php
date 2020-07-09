@@ -46,6 +46,7 @@
 <article id="block2">
 <nav class="navbar navbar-expand-sm navbar-dark ">
   <span>
+    <h1>
     Mes projets
   </h1>
 </span>
@@ -77,6 +78,7 @@
 <article id="block4">
 <nav class="navbar navbar-expand-sm navbar-dark ">
   <span>
+    <h1>
     Mes articles
   </h1>
 </span>
@@ -90,6 +92,7 @@
 <article id="block6">
 <nav class="navbar navbar-expand-sm navbar-dark ">
   <span>
+    <h1>
     contact
   </h1>
 </span>
@@ -97,4 +100,3 @@
 
 </body>
 </html>
-
