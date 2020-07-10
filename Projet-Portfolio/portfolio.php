@@ -1,17 +1,7 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-<head>
-<title>Portfolio</title>
-<meta charset="utf-8">
- <meta name="viewport" content="width=device-width, initial-scale=1">
- <link rel="stylesheet" href="./style.css">
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+<?php
+include "header.php";
+?>
 
-</head>
 <body>
 
 <nav class="navbar navbar-expand-md navbar-dark ml-auto">
@@ -97,6 +87,20 @@
   </h1>
 </span>
 </article>
+
+  <footer class="block7">
+    <footer id="social">
+        <div class="container">
+          <ul style="list-style-type: none" class="row d-flex justify-content-center">
+            <div class="row pt-4">
+              <li><a href="#" style="color:#fff">Github</a></li>
+              <li><a href="#" style="color:#fff">Linkedin</a></li>
+            </div>
+          </ul>
+        </div>
+
+      </footer>
+</footer>
 
 </body>
 </html>

@@ -256,3 +256,17 @@ div:after{
     transform: translate(-22px,5px) skew(21deg);
   }
 }
+
+.block7 {
+  padding: 35px 0;
+  background-color: Grey;
+}
+
+.block7 a {
+    font-family: roboto;
+    font-size: 30px;
+}
+
+li {
+  width: 9rem;
+}
