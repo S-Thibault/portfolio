@@ -45,8 +45,8 @@ function NoSpamQuestion($mode = 'ask', $answer = 0)
 	$array_pictures = array(); $j = 0;
 
 	$array_pictures[$j]['num'] = $j;
-	$array_pictures[$j]['question'] = "Quelle est la cinquième lettre du mot Astux";
-	$array_pictures[$j]['answer'] = "x";
+	$array_pictures[$j]['question'] = "Quelle est la septieme lettre du mot contact";
+	$array_pictures[$j]['answer'] = "t";
 	$j++;
 
 	$array_pictures[$j]['num'] = $j;
@@ -204,7 +204,7 @@ if (($err_formulaire) || (!isset($_POST['envoi'])))
 
 	<fieldset><legend>Votre message :</legend>
 		<p><label for="objet">Objet :</label><input type="text" id="objet" name="objet" value="'.stripslashes($objet).'" tabindex="3" /></p>
-		<p><label for="message">Message :</label><textarea id="message" name="message" tabindex="4" cols="30" rows="8">'.stripslashes($message).'</textarea></p>
+		<p><label for="message">Message :</label><textarea id="message" name="message" tabindex="4" cols="60" rows="8">'.stripslashes($message).'</textarea></p>
 	</fieldset>
 
 	<fieldset><legend>Antispam</legend>
