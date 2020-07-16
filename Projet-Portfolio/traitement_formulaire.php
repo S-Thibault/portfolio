@@ -1,4 +1,21 @@
 <?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dataBaseName = "portfolio";
+
+try {
+	$conn = new PDO("mysql:host=$servername;dbname=$dataBaseName", $username, $password);
+
+	$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+}
+
+catch(PDOException $e) {
+	echo "Connection failed / Echec de la connexion : " . $e->getMessage();
+}
+
+$conn = null;
 /*
 	********************************************************************************************
 	CONFIGURATION
@@ -8,7 +25,7 @@
 $destinataire = 's.thibault@codeur.online';
 
 // copie ? (envoie une copie au visiteur)
-$copie = 'oui';
+$copie = 'non';
 
 // Action du formulaire (si votre page a des paramètres dans l'URL)
 // si cette page est index.php?page=contact alors mettez index.php?page=contact
@@ -45,7 +62,7 @@ function NoSpamQuestion($mode = 'ask', $answer = 0)
 	$array_pictures = array(); $j = 0;
 
 	$array_pictures[$j]['num'] = $j;
-	$array_pictures[$j]['question'] = "Quelle est la septieme lettre du mot contact";
+	$array_pictures[$j]['question'] = "Quelle est la dernière lettre du mot contact";
 	$array_pictures[$j]['answer'] = "t";
 	$j++;
 
@@ -197,17 +214,17 @@ if (($err_formulaire) || (!isset($_POST['envoi'])))
 	// afficher le formulaire
 	echo '
 	<form id="contact" method="post" action="'.$form_action.'">
-	<fieldset><legend>Vos coordonnées</legend>
+	<fieldset><h2>Vos coordonnées</h2>
 		<p><label for="nom">Nom :</label><input type="text" id="nom" name="nom" value="'.stripslashes($nom).'" tabindex="1" /></p>
 		<p><label for="email">Email :</label><input type="text" id="email" name="email" value="'.stripslashes($email).'" tabindex="2" /></p>
 	</fieldset>
 
-	<fieldset><legend>Votre message :</legend>
+	<fieldset><h2>Votre message :</h2>
 		<p><label for="objet">Objet :</label><input type="text" id="objet" name="objet" value="'.stripslashes($objet).'" tabindex="3" /></p>
-		<p><label for="message">Message :</label><textarea id="message" name="message" tabindex="4" cols="60" rows="8">'.stripslashes($message).'</textarea></p>
+		<p><label for="message">Message :</label><textarea id="message" name="message" tabindex="4" cols="90" rows="6">'.stripslashes($message).'</textarea></p>
 	</fieldset>
 
-	<fieldset><legend>Antispam</legend>
+	<fieldset><h2>Antispam</h2>
 		<p><label for="antispam_h">'.$nospam['question'].'</label><input type="text" name="antispam_h" id="antispam_h" /><input type="hidden" name="antispam_r" value="'.$nospam['num'].'" /></p>
 	</fieldset>
 
