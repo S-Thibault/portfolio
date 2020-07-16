@@ -1,4 +1,5 @@
 <?php
+include "connexion.php";
 include "header.php";
 ?>
 
@@ -47,19 +48,26 @@ include "header.php";
 <div class="wrapper">
 <div class="media">
 <div class="layer">
-    <p>Projet : integration de maquette </p>
+    <p>Projet : integration de maquette <br>
+      <a href="https://github.com/S-Thibault/integration-template-restaurant">lien du projet sur github</a><br>
+      <a href="https://sylvaint.promo-41.codeur.online/integration-bootstrap/#">lien</a>
+    </p>
   </div>
 <img src="img/maquette.gif" alt="" />
 </div>
  <div class="media">
 <div class="layer">
-    <p>Projet : files explorer</p>
+    <p>Projet : files explorer<br>
+      <a href="https://github.com/S-Thibault/files-explorer">lien du projet sur github</a></p>
+
   </div>
 <img src="img/filesexplorer.png" alt="" />
 </div>
    <div class="media">
 <div class="layer">
-    <p>Projet : bomberman</p>
+    <p>Projet : bomberman<br>
+      <a href="https://github.com/S-Thibault/bomberman-js">lien du projet sur github</a></p>
+
   </div>
 <img src="img/bomberman.gif" alt="" />
 </div>
@@ -76,8 +84,9 @@ include "header.php";
 </article>
 
 <article id="block5">
-<h1> </h1>
-<p> </p>
+<?php
+
+ ?>
 </article>
 
 <article id="block6">
@@ -98,8 +107,8 @@ include "traitement_formulaire.php";
         <div class="container">
           <ul style="list-style-type: none" class="row d-flex justify-content-center">
             <div class="row pt-4">
-              <li><a href="#" style="color:#fff">Github</a></li>
-              <li><a href="#" style="color:#fff">Linkedin</a></li>
+              <li><a href="https://github.com/S-Thibault" style="color:#fff">Github</a></li>
+              <li><a href="https://www.linkedin.com/in/thibault-sylvain/" style="color:#fff">Linkedin</a></li>
             </div>
           </ul>
         </div>
