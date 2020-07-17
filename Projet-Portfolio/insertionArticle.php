@@ -17,7 +17,7 @@ if (!$connect) {
 }
 
 if ($_FILES['photo']['error']) {
-   switch ($_FILES['Photo']['error']){
+   switch ($_FILES['photo']['error']){
          case 1: // UPLOAD_ERR_INI_SIZE
             echo "La taille du fichier est plus grande que la limite autorisée par le serveur (paramètre upload_max_filesize du fichier php.ini).";
             break;
