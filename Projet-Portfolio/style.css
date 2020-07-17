@@ -198,18 +198,45 @@ span{
   }
 }
 
-.block7 {
+#block5 div {
+
+  width: 6em
+  font-size: 35px;
+  font-family: 'Bree Serif', serif;
+  color: #FFFFFF;
+}
+
+#block7 {
   padding: 35px 0;
   background-image: url("img/01.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.block7 a {
-    font-family: roboto;
+#block7 a {
+    font-family: 'roboto';
     font-size: 30px;
 }
 
 li {
   width: 9rem;
+}
+h3 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 6em
+  text-align: center;
+  font-size: 35px;
+  font-family: 'Bree Serif', serif;
+  color: #FFFFFF;
+}
+
+h4 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 6em
+  text-align: center;
+  font-size: 35px;
+  font-family: 'Bree Serif', serif;
+  color: #FFFFFF;
 }
