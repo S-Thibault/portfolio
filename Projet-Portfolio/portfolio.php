@@ -23,7 +23,7 @@ include "header.php";
        <a class="nav-link" href="#block4">articles</a>
      </li>
      <li class="nav-item">
-       <a class="nav-link" href="#block7">contact</a>
+       <a class="nav-link" href="#block6">contact</a>
      </li>
    </ul>
  </div>
@@ -84,9 +84,34 @@ include "header.php";
 </article>
 
 <article id="block5">
-<?php
 
- ?>
+  <?php
+    $connect = mysqli_connect("127.0.0.1", "root", "", "portfolio");
+
+    /* Vérification de la connexion */
+    if (!$connect) {
+       echo "Échec de la connexion : ".mysqli_connect_error();
+       exit();
+    }
+
+     $requete = "SELECT * FROM article ORDER BY Date";
+     if ($resultat = mysqli_query($connect,$requete)) {
+        date_default_timezone_set('Europe/Paris');
+        /* fetch le tableau associatif */
+        while ($ligne = mysqli_fetch_assoc($resultat)) {
+           $dt_debut = date_create_from_format('Y-m-d H:i:s', $ligne['Date']);
+           echo "<h3>".$ligne['Titre']."</h3>";
+           echo "<h4>Le ".$dt_debut->format('d/m/Y H:i:s')."</h4>";
+           echo "<div style='width:400px'>".$ligne['Commentaire']." </div>";
+           if ($ligne['Photo'] != "") {
+              echo "<img src='photos/".$ligne['Photo']."' width='200px' height='200px'/>";
+           }
+           echo "<hr />";
+        }
+     }
+     ?>
+     <br />
+     <a href="formulaireAjout.php" >insertion d'articles</a>
 </article>
 
 <article id="block6">
@@ -98,8 +123,8 @@ include "header.php";
 </span>
 </article>
 
-  <footer class="block7">
-    <footer id="social">
+  <footer id="block7">
+    <footer class="social">
 
 <?php
 include "traitement_formulaire.php";
