@@ -6,7 +6,7 @@ include "header.php";
 
 <body>
 
-<nav class="navbar navbar-expand-md navbar-dark ml-auto">
+<nav class="navbar navbar-expand-md ml-auto">
  <a class="navbar-brand" href="#">Portfolio</a>
  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
    <span class="navbar-toggler-icon"></span>
@@ -48,7 +48,7 @@ include "header.php";
 <div class="wrapper">
 <div class="media">
 <div class="layer">
-    <p>Projet : integration de maquette <br>
+    <p>Projet : integration de maquette <br>projet consistant a choisir une maquette puis la <br> retranscrire en html et css.<br>
       <a href="https://github.com/S-Thibault/integration-template-restaurant">lien du projet sur github</a><br>
       <a href="https://sylvaint.promo-41.codeur.online/integration-bootstrap/#">lien</a>
     </p>
@@ -111,7 +111,7 @@ include "header.php";
      }
      ?>
      <br />
-     <a href="formulaireAjout.php" >insertion d'articles</a>
+     <a href="formulaireAjout.php" >insertion d'article</a>
 </article>
 
 <article id="block6">
@@ -132,8 +132,8 @@ include "traitement_formulaire.php";
         <div class="container">
           <ul style="list-style-type: none" class="row d-flex justify-content-center">
             <div class="row pt-4">
-              <li><a href="https://github.com/S-Thibault" style="color:#fff">Github</a></li>
-              <li><a href="https://www.linkedin.com/in/thibault-sylvain/" style="color:#fff">Linkedin</a></li>
+              <li><a href="https://github.com/S-Thibault" style="color:#3ACDFC">Github</a></li>
+              <li><a href="https://www.linkedin.com/in/thibault-sylvain/" style="color:#3ACDFC">Linkedin</a></li>
             </div>
           </ul>
         </div>
