@@ -84,7 +84,7 @@ include "header.php";
 </article>
 
 <article id="block5">
-
+<div class="text-block p-5">
   <?php
     $connect = mysqli_connect("127.0.0.1", "root", "", "portfolio");
 
@@ -102,14 +102,15 @@ include "header.php";
            $dt_debut = date_create_from_format('Y-m-d H:i:s', $ligne['Date']);
            echo "<h3>".$ligne['Titre']."</h3>";
            echo "<h4>Le ".$dt_debut->format('d/m/Y H:i:s')."</h4>";
-           echo "<div style='width:400px'>".$ligne['Commentaire']." </div>";
+           echo "<div style='width:800px'>".$ligne['Commentaire']." </div>";
            if ($ligne['Photo'] != "") {
-              echo "<img src='photos/".$ligne['Photo']."' width='200px' height='200px'/>";
+              echo "<img src='photos/".$ligne['Photo']."' width='500px' height='500px'/>";
            }
            echo "<hr />";
         }
      }
      ?>
+     </div>
      <br />
      <a href="formulaireAjout.php" >insertion d'article</a>
 </article>
