@@ -32,7 +32,7 @@ include "header.php";
 <article id="block1">
 <h1> Thibault Sylvain </h1>
 <h2> Developpeur web et web mobile </h2>
-<p>texte disant ce que je fais flemme de rediger maintenant je verrais plus tard </p>
+<p>Actuellement en formation Développeur Web/Web Mobile à l'Access Code School de Nevers</p>
 </article>
 
 <article id="block2">
@@ -48,7 +48,7 @@ include "header.php";
 <div class="wrapper">
 <div class="media">
 <div class="layer">
-    <p>Projet : integration de maquette <br>projet consistant a choisir une maquette puis la <br> retranscrire en html et css.<br>
+    <p>Projet : integration de maquette <br>Projet consistant a choisir une maquette puis la <br> retranscrire en html et css.<br>
       <a href="https://github.com/S-Thibault/integration-template-restaurant">lien du projet sur github</a><br>
       <a href="https://sylvaint.promo-41.codeur.online/integration-bootstrap/#">lien</a>
     </p>
@@ -57,7 +57,7 @@ include "header.php";
 </div>
  <div class="media">
 <div class="layer">
-    <p>Projet : files explorer<br>
+    <p>Projet : files explorer<br> Creation d'un explorateur de fichier en php.<br>
       <a href="https://github.com/S-Thibault/files-explorer">lien du projet sur github</a></p>
 
   </div>
@@ -65,7 +65,7 @@ include "header.php";
 </div>
    <div class="media">
 <div class="layer">
-    <p>Projet : bomberman<br>
+    <p>Projet : bomberman<br>Un bomberman en javascript. <br>
       <a href="https://github.com/S-Thibault/bomberman-js">lien du projet sur github</a></p>
 
   </div>
@@ -104,7 +104,7 @@ include "header.php";
            echo "<h4>Le ".$dt_debut->format('d/m/Y H:i:s')."</h4>";
            echo "<div style='width:800px'>".$ligne['Commentaire']." </div>";
            if ($ligne['Photo'] != "") {
-              echo "<img src='photos/".$ligne['Photo']."' width='500px' height='500px'/>";
+              echo "<img src='photos/".$ligne['Photo']."' width='200px' height='200px'/>";
            }
            echo "<hr />";
         }
