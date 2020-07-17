@@ -1,6 +1,11 @@
 nav{
   background-color: black;
+  font-family: 'Bree Serif', serif;
+  color: #094152;
+
 }
+
+
 
 #block1{
   background-image: url("img/block4.gif");
@@ -79,19 +84,20 @@ h1{
   position: center;
   text-align: center;
   font-family: 'Bree Serif', serif;
-  color: #FFFFFF;
+  text-shadow:0 0 2px #00FFFC,0 0 30px #00FFFC,0px 0px 5px #00FFFC, 0 0 150px #00FFFC;color:#00FFFC;
+
 }
 
 h2{
   font-family: 'Bree Serif', serif;
   text-align: center;
-  color: #FFFFFF;
+text-shadow:0 0 2px #00FFFC,0 0 30px #00FFFC,0px 0px 5px #00FFFC, 0 0 150px #00FFFC;color:#00FFFC;
 }
 
 p{
   font-family: 'Bree Serif', serif;
   text-align: center;
-  color: #FFFFFF;
+  color: #3ACDFC;
 }
 
 span{
@@ -135,8 +141,8 @@ span{
 }
 
 #block3 .media {
-  width: 600px;
-  height: 500px;
+  width: 500px;
+  height: 400px;
   overflow: hidden;
   position: relative;
   display: flex;
@@ -199,11 +205,20 @@ span{
 }
 
 #block5 div {
-
   width: 6em
   font-size: 35px;
   font-family: 'Bree Serif', serif;
-  color: #FFFFFF;
+  color: #4CB6D7;
+}
+
+#block5 a {
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+  width: 6em
+  font-size: 35px;
+  font-family: 'Bree Serif', serif;
+color: #04BFF8;
 }
 
 #block7 {
@@ -221,6 +236,7 @@ span{
 li {
   width: 9rem;
 }
+
 h3 {
   margin-left: auto;
   margin-right: auto;
@@ -228,7 +244,7 @@ h3 {
   text-align: center;
   font-size: 35px;
   font-family: 'Bree Serif', serif;
-  color: #FFFFFF;
+  color: #4CB6D7;
 }
 
 h4 {
@@ -238,5 +254,5 @@ h4 {
   text-align: center;
   font-size: 35px;
   font-family: 'Bree Serif', serif;
-  color: #FFFFFF;
+  color: #04BFF8;
 }
