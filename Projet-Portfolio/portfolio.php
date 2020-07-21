@@ -1,8 +1,12 @@
 <?php
+//On démarre une nouvelle session
+session_start();
+?>
+
+<?php
 include "connexion.php";
 include "header.php";
 ?>
-
 
 <body>
 
@@ -25,6 +29,17 @@ include "header.php";
      <li class="nav-item">
        <a class="nav-link" href="#block6">contact</a>
      </li>
+     <p>
+        <label for="login">User :</label>
+        <input type="text" name="user" id="user" value="" />
+    </p>
+        <p>
+          <label for="password">Password :</label>
+          <input type="password" name="pass" id="pass" value="" />
+          <input type="submit" name="submit" value="connexion" />
+        </p>
+      </fieldset>
+</form>
    </ul>
  </div>
 </nav>
@@ -32,7 +47,7 @@ include "header.php";
 <article id="block1">
 <h1> Thibault Sylvain </h1>
 <h2> Developpeur web et web mobile </h2>
-<p>Actuellement en formation Développeur Web/Web Mobile à l'Access Code School de Nevers</p>
+<p>En formation Développeur Web/Web Mobile à l'Access Code School de Nevers</p>
 </article>
 
 <article id="block2">
