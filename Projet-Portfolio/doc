@@ -1,3 +1,22 @@
+- manipuler des fichiers en PHP : Ouvrir, lire et fermer un fichier en PHP, créer et écrire dans un fichier en PHP et autres opérations sur les fichiers en PHP
+
+'''
+<?php
+fopen('le fichier a ouvrir', + mode 'r' = lecture seule, 'r+' lecture + ecriture, 'a' ecriture seule et crée un fichier si il n'existe pas, 'a+'' comme r+ mais crée un fichier si il n'existe pas )
+
+fgetc permet de recuperer un caractères dans un fichier texte et fgets permet de recuperer une ligne dans un fichier
+
+$ligne = fgets($fichier);
+
+echo $ligne;
+
+fseek($fichier, 0); permet de se positionner dans le fichier a modifier
+fputs($fichier, $)modifie le fichier
+
+fclose($fichier);
+?>
+'''
+
 https://ckeditor.com/docs/ckeditor4/latest/guide/dev_installation.html
 
 Développement back-end d'un portfolio :
