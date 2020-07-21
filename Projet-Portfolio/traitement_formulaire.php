@@ -62,17 +62,17 @@ function NoSpamQuestion($mode = 'ask', $answer = 0)
 	$array_pictures = array(); $j = 0;
 
 	$array_pictures[$j]['num'] = $j;
-	$array_pictures[$j]['question'] = "Quelle est la dernière lettre du mot contact";
+	$array_pictures[$j]['question'] = "Quelle est la dernière lettre du mot contact :";
 	$array_pictures[$j]['answer'] = "t";
 	$j++;
 
 	$array_pictures[$j]['num'] = $j;
-	$array_pictures[$j]['question'] = "Le soleil est-il chaud ou froid ?";
+	$array_pictures[$j]['question'] = "Le soleil est-il chaud ou froid ? :";
 	$array_pictures[$j]['answer'] = "chaud";
 	$j++;
 
 	$array_pictures[$j]['num'] = $j;
-	$array_pictures[$j]['question'] = "Ecrire 12 en lettres";
+	$array_pictures[$j]['question'] = "Ecrire 12 en lettres :";
 	$array_pictures[$j]['answer'] = "douze";
 	$j++;
 
