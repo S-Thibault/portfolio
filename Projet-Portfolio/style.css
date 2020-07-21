@@ -1,73 +1,78 @@
-nav{
+nav {
   background-color: black;
   font-family: 'Bree Serif', serif;
   color: #094152;
 }
 
-#block1{
+#block1 {
   background-image: url("img/block4.gif");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 420px 40px 420px 40px;
-
 }
 
-h1{
+h1 {
   animation: glitch 1s linear infinite;
 }
 
-@keyframes glitch{
-  2%,64%{
-    transform: translate(2px,0) skew(0deg);
+@keyframes glitch {
+  2%, 64% {
+    transform: translate(2px, 0) skew(0deg);
   }
-  4%,60%{
-    transform: translate(-2px,0) skew(0deg);
+
+  4%, 60% {
+    transform: translate(-2px, 0) skew(0deg);
   }
-  62%{
-    transform: translate(0,0) skew(5deg);
+
+  62% {
+    transform: translate(0, 0) skew(5deg);
   }
 }
 
 h1:before,
-h1:after{
+h1:after {
   content: attr(title);
   position: absolute;
   left: 0;
 }
 
-h1:before{
+h1:before {
   animation: glitchTop 1s linear infinite;
   clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
 }
 
-@keyframes glitchTop{
-  2%,64%{
-    transform: translate(2px,-2px);
+@keyframes glitchTop {
+  2%, 64% {
+    transform: translate(2px, -2px);
   }
-  4%,60%{
-    transform: translate(-2px,2px);
+
+  4%, 60% {
+    transform: translate(-2px, 2px);
   }
-  62%{
-    transform: translate(13px,-1px) skew(-13deg);
+
+  62% {
+    transform: translate(13px, -1px) skew(-13deg);
   }
 }
 
-h1:after{
+h1:after {
   animation: glitchBotom 1.5s linear infinite;
   clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
   -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
 }
 
-@keyframes glitchBotom{
-  2%,64%{
-    transform: translate(-2px,0);
+@keyframes glitchBotom {
+  2%, 64% {
+    transform: translate(-2px, 0);
   }
-  4%,60%{
-    transform: translate(-2px,0);
+
+  4%, 60% {
+    transform: translate(-2px, 0);
   }
-  62%{
-    transform: translate(-22px,5px) skew(21deg);
+
+  62% {
+    transform: translate(-22px, 5px) skew(21deg);
   }
 }
 
@@ -75,43 +80,42 @@ h1:after{
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-#block5{
+#block5 {
   background-image: url("img/block2.GIF");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 420px 40px 420px 40px;
 }
 
-h1{
+h1 {
   position: center;
   text-align: center;
   font-family: 'Bree Serif', serif;
-  text-shadow:0 0 2px #00FFFC,0 0 30px #00FFFC,0px 0px 5px #00FFFC, 0 0 150px #00FFFC;color:#00FFFC;
-
+  text-shadow: 0 0 2px #00FFFC, 0 0 30px #00FFFC, 0px 0px 5px #00FFFC, 0 0 150px #00FFFC;
+  color: #00FFFC;
 }
 
-h2{
+h2 {
   font-family: 'Bree Serif', serif;
   text-align: center;
-text-shadow:0 0 2px #00FFFC,0 0 30px #00FFFC,0px 0px 5px #00FFFC, 0 0 150px #00FFFC;color:#00FFFC;
+  text-shadow: 0 0 2px #00FFFC, 0 0 30px #00FFFC, 0px 0px 5px #00FFFC, 0 0 150px #00FFFC;
+  color: #00FFFC;
 }
 
-p{
+p {
   font-family: 'Bree Serif', serif;
   text-align: center;
   color: #3ACDFC;
 }
 
-span{
+span {
   margin-left: auto;
   margin-right: auto;
-  width: 6em
-  text-align: center;
+  width: 6em text-align: center;
   font-size: 35px;
   font-family: 'Bree Serif', serif;
   color: #FFFFFF;
 }
-
 
 #block3 {
   height: 100vh;
@@ -136,9 +140,9 @@ span{
   display: flex;
   justify-content: center;
   align-items: center;
-  > * {
-    margin: 5px;
 
+  >* {
+    margin: 5px;
   }
 }
 
@@ -151,10 +155,11 @@ span{
   padding: 10px;
   justify-content: center;
   align-items: center;
+
   img {
-      max-width: 100%;
-      height: auto;
-    }
+    max-width: 100%;
+    height: auto;
+  }
 }
 
 #block3 .layer {
@@ -168,6 +173,7 @@ span{
   background: #000000;
   color: #151E3F;
   transition: all 0.9s ease;
+
   p {
     transition: all 0.9s ease;
     transform: scale(0.1)
@@ -178,37 +184,38 @@ span{
   font-family: 'Bree Serif', serif;
   text-align: center;
   font-size: 15px;
-  letter-spacing:1px;
+  letter-spacing: 1px;
 }
 
 #block3 .media:hover .layer {
   opacity: 0.8;
   width: 90%;
   transition: all 0.5s ease;
+
   p {
     transform: scale(1);
     transition: all 0.9s ease;
   }
 }
 
-#block3 @media (max-width: 800px){
+#block3 @media (max-width: 800px) {
   body {
     transform: scale(0.6);
   }
 }
 
 #block3 @media (max-width: 600px) {
-    .wrapper {
+  .wrapper {
     display: block;
-    > * {
+
+    >* {
       margin: 10px;
     }
   }
 }
 
 #block5 div {
-  width: 6em
-  font-size: 35px;
+  width: 6em font-size: 35px;
   font-family: 'Bree Serif', serif;
   color: #4CB6D7;
 }
@@ -217,10 +224,9 @@ span{
   position: fixed;
   right: 0px;
   bottom: 0px;
-  width: 6em
-  font-size: 35px;
+  width: 6em font-size: 35px;
   font-family: 'Bree Serif', serif;
-color: #04BFF8;
+  color: #04BFF8;
 }
 
 #block7 {
@@ -231,8 +237,8 @@ color: #04BFF8;
 }
 
 #block7 a {
-    font-family: 'roboto';
-    font-size: 30px;
+  font-family: 'roboto';
+  font-size: 30px;
 }
 
 li {
@@ -242,8 +248,7 @@ li {
 h3 {
   margin-left: auto;
   margin-right: auto;
-  width: 6em
-  text-align: center;
+  width: 6em text-align: center;
   font-size: 35px;
   font-family: 'Bree Serif', serif;
   color: #4CB6D7;
@@ -252,8 +257,7 @@ h3 {
 h4 {
   margin-left: auto;
   margin-right: auto;
-  width: 6em
-  text-align: center;
+  width: 6em text-align: center;
   font-size: 35px;
   font-family: 'Bree Serif', serif;
   color: #04BFF8;
