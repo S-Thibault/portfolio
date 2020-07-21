@@ -1,3 +1,7 @@
+<?php
+//On démarre une nouvelle session
+session_start();
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
@@ -26,7 +30,6 @@ if ($_FILES['photo']['error']) {
             break;
          case 3: // UPLOAD_ERR_PARTIAL
             echo "L'envoi du fichier a été interrompu pendant le transfert.";
-
             break;
          case 4: // UPLOAD_ERR_NO_FILE
            echo "La taille du fichier que vous avez envoyé est nulle.";
